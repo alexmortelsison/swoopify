@@ -11,7 +11,7 @@ export default function SigninPage() {
           }
           alt="bg"
           fill
-          className="object-cover h-[100vh] brightness-30 -z-50"
+          className="object-cover h-[100vh] brightness-40 -z-50"
         />
       </div>
       <div className="flex items-center py-8 lg:px-16 px-4 justify-between space-x-2">
