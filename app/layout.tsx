@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, League_Script } from "next/font/google";
+import { Geist, Geist_Mono, Sacramento } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,7 +11,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const script = League_Script({
+const sacramento = Sacramento({
   weight: "400",
   subsets: ["latin"],
 });
@@ -30,9 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${script.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${sacramento.className} antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>
